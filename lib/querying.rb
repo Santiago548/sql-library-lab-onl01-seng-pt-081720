@@ -22,8 +22,6 @@ def select_series_title_with_most_human_characters
   JOIN books ON series.id = books.series_id
   JOIN charcter_books ON books.id = charcter_books.book_id
   JOIN characters ON charachter_books.charcter_id = charcters.id;"
-
-  "series.id books.series_id/ books.id charcter_books.book_id/ charachter_books.charcter_id charcters.id species"
 end
 
 def select_character_names_and_number_of_books_they_are_in
